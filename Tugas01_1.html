@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Angka Ganjil/Genap</title>
+</head>
+<body>
+
+    <br>
+    <div>
+        Masukkan Nilai : <input id="GanjilGenap" type="number">
+        <button id="btn1" onclick="getGanjilGenap()">Cek</button>
+    </div>
+    <br>
+    <div>
+        Bilangan Ganjil/Genap?: <input id="LulusdanTidak" type="text" readonly>
+    </div>
+
+<script>
+    function getGanjilGenap() {
+        // 1. Ambil nilai dari input 'GanjilGenap'
+        let num = document.getElementById("GanjilGenap").value;
+        let outputField = document.getElementById("LulusdanTidak");
+
+        // Validasi jika input kosong
+        if (num === "") {
+            outputField.value = "Masukkan angka!";
+            return;
+        }
+
+        // 2. Cek apakah ganjil atau genap lalu tampilkan menggunakan .value
+        if (num % 2 === 0) {
+            outputField.value = "Genap";
+        } else {
+            outputField.value = "Ganjil";
+        }
+    }
+</script>
+</body>
+</html>

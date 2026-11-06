@@ -1,0 +1,7 @@
+<HTML>
+<BODY>
+<SCRIPT language="javascript">
+window.confirm("Anda mau meneruskanproses?");
+</SCRIPT>
+</BODY>
+</HTML>

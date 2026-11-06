@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<STYLE type="text/css">
+body {background-color: yellow}
+h1 {background-color: #00ff00}
+h1#miring{font-style:italic;font-seze: 50px;}
+h2 {background-color: transparent}
+
+*#normal{font-style : normal;font-size: 70px}
+p {background—color: rgb(250, 0, 255)}
+.teks50_bold {
+    font-family: Arial;
+    font-size: 50 x;
+    font-weight : bold;}
+</

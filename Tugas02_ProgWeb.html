@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <br>
+    <div>
+        Masukan Nilai:  <input id="bilanganID" type="number">
+        <button id="btn1" onclick="getLulusdanTidak()">Cek</button>
+    </div>
+    <br>
+    <div>
+        Lulus/Tidak?:<input id="LulusdanTidak" type="text">
+    </div>
+</body>
+
+<script>
+    
+    let btn = document.getElementById("btn1")
+    let LulusdanTidakText = document.getElementById("LulusdanTidak")
+    
+    
+    function getLulusdanTidak(){
+        let num = document.getElementById("bilanganID").value
+
+        if(num >=55){
+            LulusdanTidakText.value = "Lulus"
+        }
+        
+        else if(num <55){
+           LulusdanTidakText.value = "Tidak Lulus"
+        }
+    }
+</script>
+</html>
